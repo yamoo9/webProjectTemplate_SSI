@@ -1,0 +1,18 @@
+<!-- 프리픽스프리 | OS & 브라우저 감지 | 모더나이저 로더 -->
+<!-- 주의! prefix-free의 경우, html에서 직접 호출하지 않는 css 파일의 경우 문서에 적용시켜주지 않는다. -->
+<!-- <script src="./_/js/libs/prefix-free.min.js"></script> -->
+<script src="./_/js/libs/yamoo9/yamoo9-UA.js"></script>
+<script src="./_/js/libs/modernizr.custom.js"></script>
+
+<!-- IE 8- : jQuery 호출 / 마이그레이션 / 로컬 데이터 호출 --> 
+<!--[if lt IE 9]>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.1.js"></script>
+<script>window.jQuery||document.write('<script src="./_/js/libs/jquery/jquery-1.9.1.js"><\/script><script src="./_/js/libs/jquery/jquery-migrate-1.1.1.js"><\/script>')</script>
+<![endif]-->
+
+<!-- IE 9+ : jQuery 2 호출 / 로컬 데이터 호출 --> 
+<!--[if gte IE 9]><!-->
+<!-- <script src="http://code.jquery.com/jquery-2.0.0b2.js"></script> -->
+<!-- <script>window.jQuery||document.write('<script src="./_/js/libs/jquery/jquery-2.0.0b2.js"><\/script>')</script> -->
+<!--<![endif]-->
